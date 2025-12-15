@@ -7,9 +7,9 @@ const GsapFromTo = () => {
     gsap.fromTo(
       "#red-box",
       {
-        rotation: 27,
-        x: 100,
-        duration: 1,
+        x: 0,
+        rotation: 0,
+        borderRadius: "0",
       },
       {
         x: 250,
@@ -18,7 +18,7 @@ const GsapFromTo = () => {
         yoyo: true,
         rotation: 360,
         duration: 2,
-        ease: "power1.inOut",
+        ease: "bounce.out",
       }
     );
   }, []);

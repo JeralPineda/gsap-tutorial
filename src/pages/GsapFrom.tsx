@@ -5,9 +5,12 @@ const GsapFrom = () => {
   // TODO: Implement the gsap.from() method
   useGSAP(() => {
     gsap.from("#green-box", {
-      rotation: 27,
-      x: 100,
-      duration: 1,
+      x: 250,
+      repeat: -1,
+      yoyo: true,
+      rotation: 360,
+      duration: 2,
+      ease: "power1.inOut",
     });
   }, []);
 
